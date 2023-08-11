@@ -35,7 +35,7 @@
                 <li class="important-person">Both of you</li>
                 <li>Love you</li>
             </ul>
-        </section>
+        </section id="main-container">
         <section class="fruits-container">
             <h1 id="fruits-title" class="some-class random-class blue-bg">Fruits I like</h1>
             <ul>
@@ -45,9 +45,9 @@
                 <li>Guava</li>
             </ul>
         </section>
-        <section>
+        <section id="person-container" class="large-text">
             <h1 id="family-title">Our Family</h1>
-            <ul>
+            <ul id="person-list" class="">
                 <li>AmmaAbbu</li>
                 <li>HeeraMuktaMunnaRudro</li>
                 <li>AyanAbrarNihan</li>
@@ -56,8 +56,9 @@
         </section>
     </main>
     <script src="js/dom.js"></script>
+    <script src="js/jsconnct.js"></script>
+    <script src="js/appened.js"></script>
     <script>
- 
      const liCollection = document.getElementsByTagName('li');
     //  console.log(liCollection);
     for(const li of liCollection){
@@ -74,14 +75,14 @@
     //vvi
     const person = document.getElementsByClassName('important-person');
     for (const person of persons){
-        consol.log(person.innerText)
+        // consol.log(person.innerText)
     }
     //querySelector
     //querySelectorAll
     const someLi = document.querySelectorAll('fruits-container li');
     // console.log(someLi);
     fo(const li of someLi){
-    console.log(li.innerText);
+    // console.log(li.innerText);
     }
     </script>
 </body>
