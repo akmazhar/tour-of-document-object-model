@@ -4,18 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour of DOM</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .fruits-container{
+            color: red;
+        }
+        #family-title{
+            color: blue;
+        }
+        #fruits-title{
+            color: black;
+        }
+        .important-person{
+            color: green;
+            backgroundColor: rgb(226, 156, 43);
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to my DOM</h1>
+        <p>Leaderboard is not updated. After receiving the marks for the first assignment, my score position was 790. However, it remains stagnant, even though I have completed four assignments.</p>
     </header>
     <main>
-        <h1>My awesome DOM</h1>
-        <ul>
-            <li>You are welcome</li>
-            <li>Let me do this</li>
-            <li>My lovely Abrar</li>
-        </ul>
+        <section>
+            <ul>
+                <li>Welcome</li>
+                <li class="important-person">My beloved Son Abrar</li>
+                <li class="important-person">My beloved wife Tamanna</li>
+                <li class="important-person">Both of you</li>
+                <li>Love you</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruits-title" class="some-class random-class blue-bg">Fruits I like</h1>
+            <ul>
+                <li>Banana</li>
+                <li>Pappaiya</li>
+                <li>Carrot</li>
+                <li>Guava</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="family-title">Our Family</h1>
+            <ul>
+                <li>AmmaAbbu</li>
+                <li>HeeraMuktaMunnaRudro</li>
+                <li>AyanAbrarNihan</li>
+                <li>MmuTinniShanta</li>
+            </ul>
+        </section>
     </main>
+    <script src="js/dom.js"></script>
+    <script>
+ 
+     const liCollection = document.getElementsByTagName('li');
+    //  console.log(liCollection);
+    for(const li of liCollection){
+        // console.log(li.innerText);
+        const allHeadings = document.getElementsByTagName('h1');
+    }
+    for(const h1 of allHeadings){
+        // console.log(h1.innerText);
+    }
+   //vvi
+    const persons = document.getElementById('fruits-title');
+    fruitsTitle.innerText = 'Fruits changed by JS';
+    
+    //vvi
+    const person = document.getElementsByClassName('important-person');
+    for (const person of persons){
+        consol.log(person.innerText)
+    }
+    //querySelector
+    //querySelectorAll
+    const someLi = document.querySelectorAll('fruits-container li');
+    // console.log(someLi);
+    fo(const li of someLi){
+    console.log(li.innerText);
+    }
+    </script>
 </body>
 </html>
